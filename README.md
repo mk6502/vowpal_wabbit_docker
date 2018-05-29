@@ -1,4 +1,4 @@
-# Vowpal Wabbit
+# Vowpal Wabbit Docker Image #
 
 Vowpal Wabbit in a Docker container. Compiled using Clang.
 
