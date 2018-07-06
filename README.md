@@ -1,6 +1,6 @@
 # Vowpal Wabbit Docker Image #
 
-Vowpal Wabbit in a Docker container. Compiled using Clang.
+Vowpal Wabbit on Ubuntu 18.04 compiled using Clang.
 
 # Example #
 
