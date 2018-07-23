@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-ARG VW_VERSION=8.6.0
+ARG VW_VERSION=8.6.1
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
 RUN apk add --no-cache --virtual build-deps curl libtool m4 autoconf g++ make zlib-dev clang-dev openjdk8 && \
