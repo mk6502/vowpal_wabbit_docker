@@ -1,16 +1,16 @@
-FROM alpine:3.8
+FROM alpine:3.9
 
-ARG VW_VERSION=8.6.1
+ARG VW_VERSION=8.7.0
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
-RUN apk add --no-cache --virtual build-deps curl libtool m4 autoconf g++ make zlib-dev clang-dev openjdk8 && \
+RUN apk add --no-cache --virtual build-deps cmake curl libtool m4 autoconf git g++ make zlib-dev clang-dev openjdk8 && \
     apk add --no-cache dumb-init boost-dev && \
     export JAVA_HOME=/usr/lib/jvm/default-jvm && \
     mkdir /app && \
     cd /app && \
-    curl https://codeload.github.com/JohnLangford/vowpal_wabbit/tar.gz/$VW_VERSION -o vw.tar.gz && \
-    tar xzf vw.tar.gz && \
-    cd vowpal_wabbit-$VW_VERSION && \
+    git clone https://github.com/VowpalWabbit/vowpal_wabbit.git && \
+    cd vowpal_wabbit && \
+    git checkout 8.7.0 && \
     make CXX='clang++' install && \
     cd / && \
     rm -rf /app && \
