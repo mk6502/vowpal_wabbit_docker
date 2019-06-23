@@ -1,6 +1,6 @@
 # Vowpal Wabbit Docker Image #
 
-Vowpal Wabbit as a Docker image. Uses Alpine by default. Ubuntu is available in a branch.
+Vowpal Wabbit as a Docker image.
 
 # Example #
 
