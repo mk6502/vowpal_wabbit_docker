@@ -6,4 +6,4 @@ Vowpal Wabbit as a Docker image.
 
 Run Vowpal Wabbit with:
 
-    docker run --rm --volume=$(pwd):/data -t crimsonredmk/vw /data/click.train.vw -f /data/click.model.vw --loss_function logistic --link logistic --passes 1 --cache_file /data/click.cache.vw
+    docker run --rm --volume=$(pwd):/data -t mikestaszel/vw /data/click.train.vw -f /data/click.model.vw --loss_function logistic --link logistic --passes 1 --cache_file /data/click.cache.vw
