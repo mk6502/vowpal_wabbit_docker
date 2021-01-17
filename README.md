@@ -2,6 +2,11 @@
 
 Vowpal Wabbit as a Docker image based on Alpine Linux.
 
+## Vowpal Wabbit Links
+
+* [Vowpal Wabbit](https://vowpalwabbit.org/)
+* [Vowpal Wabbit - GitHub](https://github.com/VowpalWabbit/vowpal_wabbit)
+
 # Running
 
 Run Vowpal Wabbit with:
